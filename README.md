@@ -43,3 +43,7 @@ Changing the Git Commit Message Editor:
 # HTML
 macOS/navigate to directory containing file and use:
 open ./index.html
+
+VSCode built-in shortcut to generate boilerplate in one go.
+In index.html, type '!' on the first line, press enter (choose first one).
+
