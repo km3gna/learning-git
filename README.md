@@ -27,3 +27,19 @@ Basic Git syntax is "program | action | destination":
 .. git commit -m "message"  >>  git | commit -m | "message"
 .. git status  >>  git | status | (no destination)
 
+Best practices:
+.. atomic commits (commit that includes changes related to only one feature or task of your program)
+.. leveraging those atomic commits
+
+Why?
+.. (1) if something you change turns out to cause problems, it is easy to revert the specific change without losing other changes
+.. (2) enables you to write better commit messages
+
+Changing the Git Commit Message Editor:
+.. Using VSCode and don't want to get stuck writing a commit message in Vim (git commit without message flag, -m)
+.. git config --global core.editor "code --wait"
+.. above command will open a new tab in VSCode with the ability to write commit message and an optional description below it; save, exit
+
+# HTML
+macOS/navigate to directory containing file and use:
+open ./index.html
