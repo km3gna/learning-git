@@ -1,0 +1,18 @@
+CSS Specificity Notes
+
+https://www.youtube.com/watch?v=c0kfcP_nD9E&ab_channel=KevinPowell
+
+https://specificity.keegan.st/
+
+More specific, more important rule is.
+Last rule wins (given equal specificity)
+
+Order of importance:
+Inline style (in order) > Internal CSS > External CSS
+Tag selectors (lowest specificity)
+Classes are more specific than Tags
+IDs are more specific than classes (but don't use IDs too often b/c it can't be over-written (except inline styles but also a nightmare to find so stick to classes))
+Overwrite anything by typing in '!important' (overrides everything but not recommended or have an AMAZING reason)
+Don't use element selectors if you don't have to.
+Be generous with use of classes. Keeps level of specificity across the board.
+Avoid nexting selectors as much as possible.
