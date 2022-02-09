@@ -1,32 +1,57 @@
-.para {
+.para, 
+.small-para {
   color: hsl(0, 100%, 50%);
-  font-size: 22px;
 }
 
-.para.small-para {
-  font-size: 12px;
+.para {
+    font-size: 22px;
+  }
+
+/*
+OR keep in original place and chain selectors (giving this rule a higher specificity)
+p.small-para {
+    font-size: 12px;
 }
+*/
 
 .button {
-  font-size: 20px;
-} 
-
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-}
-
-.cancel {
   background-color: #ffc0cb;
   color: black;
+  font-size: 20px;
 }
 
-.text {
+div.text {
   color: green;
   font-size: 28px;
 }
-.text.child {
+
+.small-para {
+  font-size: 12px;
+}
+ /* 
+ Another solution would be chaining selectors for higher specificity 
+ p.small-para {
+  font-size: 12px;
+ }
+ */
+
+ #confirm-button {
+  background: green;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;;
+ }
+
+div .child {
   color: red;
   font-size: 14px;
   }
+
+/*
+Added another selector to create a descendant combinator.
+ONLY descendant combinator == div.text
+
+.text .child {
+  color: red;
+  font-size: 14px;
+}
